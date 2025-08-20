@@ -1,0 +1,130 @@
+/* UploadButton 컴포넌트 스타일 */
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 88px;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.upload-btn:disabled {
+  cursor: not-allowed;
+}
+
+.upload-btn__icon {
+  flex-shrink: 0;
+}
+
+.upload-btn__text {
+  white-space: nowrap;
+}
+
+/* 업로드 버튼 상태별 스타일 */
+.upload-btn--idle {
+  background: #ffffff;
+  color: #4a5568;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.upload-btn--idle:hover:not(:disabled) {
+  background: #f7fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn--uploading {
+  background: #ffffff;
+  color: #4a5568;
+  cursor: not-allowed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.upload-btn--uploading .upload-btn__icon {
+  animation: spin 1s linear infinite;
+}
+
+.upload-btn--success {
+  background: #ffffff;
+  color: #4a5568;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.upload-btn--error {
+  background: #ffffff;
+  color: #4a5568;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.upload-btn--disabled {
+  background: #ffffff;
+  color: #a0aec0;
+  opacity: 0.7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 버튼 쇼케이스 스타일 */
+.button-showcase {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.button-label {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* 애니메이션 */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .button-showcase {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .button-row {
+    justify-content: center;
+  }
+}
+
+/* 스크린 리더 전용 텍스트 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
