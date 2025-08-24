@@ -87,19 +87,25 @@ import {
 - **최대 너비**: 500px
 - **자동 크기 조절**: 화면 크기에 따라 폼과 버튼이 함께 스케일링
 
-## 템플릿 사용법
+## 프로젝트 사용법
 
-아래 명령어로 이 템플릿을 기반으로 새 프로젝트를 생성할 수 있습니다:
+이 프로젝트를 로컬에서 실행하려면:
 
 ```sh
-bun create jungyeon0708/react-js
+# 저장소 클론
+git clone https://github.com/jungyeon0708/react-homework.git
+cd react-homework/week2
+
+# 의존성 설치 및 개발 서버 실행
+bun install
+bun run dev
 ```
 
-위 명령어를 실행하면 이 저장소의 리액트 빌드 환경이 새로운 폴더에 복사됩니다.
+위 명령어를 실행하면 `http://localhost:3000`에서 프로젝트를 확인할 수 있습니다.
 
 ---
 
-### 템플릿 특징
+### 프로젝트 특징
 
 - Bun 런타임 기반의 빠른 리액트 개발 환경
 - 상태를 가진 폼 컴포넌트와 유효성 검사 시스템
