@@ -2,6 +2,24 @@
 
 Bun 올인원 런타임을 사용해 리액트를 빌드할 수 있는 환경을 구성합니다.
 
+## 프로젝트 사용법
+
+### 프로젝트 클론 및 설정
+
+```bash
+# 프로젝트 클론
+git clone https://github.com/jungyeon0708/react-homework.git
+
+# week1 디렉토리로 이동
+cd react-homework/week1
+
+# 의존성 설치
+bun install
+
+# 개발 서버 실행
+bun dev
+```
+
 ## 컴포넌트 사용법
 
 이 프로젝트는 상태가 없는(Stateless) 함수형 컴포넌트들로 구성되어 있으며, 재사용성과 접근성을 고려하여 설계되었습니다.
