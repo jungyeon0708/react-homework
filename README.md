@@ -4,8 +4,8 @@
 
 ## 📚 주차별 과제
 
-[📁 Week1 상세 문서](./week1/README.md) | [🤔 Week1 회고록](./week1/RETROSPECTIVE.md)
-[📁 Week2 상세 문서](./week2/README.md) | [🤔 Week2 회고록](./week2/RETROSPECTIVE.md)
+- [📁 Week1 상세 문서](./week1/README.md) | [🤔 Week1 회고록](./week1/RETROSPECTIVE.md)
+- [📁 Week2 상세 문서](./week2/README.md) | [🤔 Week2 회고록](./week2/RETROSPECTIVE.md)
 
 ---
 
