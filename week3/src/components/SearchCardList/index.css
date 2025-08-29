@@ -1,0 +1,8 @@
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  background: #fff9e5;
+  min-height: 100vh;
+}
