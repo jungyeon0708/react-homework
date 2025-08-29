@@ -1,0 +1,41 @@
+.search-container {
+  padding: 40px 0 0 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+  align-items: start;
+  justify-content: center;
+  padding: 32px 0;
+  min-height: 320px;
+}
+
+/* 태블릿: 600~1023px, 2열 */
+@media (max-width: 1023px) and (min-width: 600px) {
+  .card-list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 폰: 599px 이하, 1열 */
+@media (max-width: 599px) {
+  .card-list-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.no-result {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  padding: 40px;
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+}
