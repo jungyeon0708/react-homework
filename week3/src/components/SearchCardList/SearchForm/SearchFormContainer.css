@@ -39,3 +39,13 @@
   color: #888;
   font-size: 18px;
 }
+
+/* 메인페이지 레이아웃 스타일 추가 */
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  background: #fff9e5;
+  min-height: 100vh;
+}

@@ -4,16 +4,21 @@ import './SearchForm.css'
 export default function SearchForm({ onSearch }) {
   const [input, setInput] = useState('')
 
+  // 중복된 검색 로직을 하나의 함수로 통합
+  const performSearch = (value) => {
+    onSearch(value.trim())
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    onSearch(input.trim())
+    performSearch(input)
   }
 
   // 입력값이 바뀔 때마다 자동 검색
   const handleChange = (e) => {
     const value = e.target.value
     setInput(value)
-    onSearch(value.trim())
+    performSearch(value)
   }
 
   return (
